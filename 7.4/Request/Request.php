@@ -3,7 +3,6 @@ namespace CoolSMS\PHP74\Request;
 
 use DateTime;
 use DateTimeZone;
-use function GuzzleHttp\Psr7\str;
 
 /**
  * Class Request

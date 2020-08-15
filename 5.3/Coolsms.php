@@ -147,8 +147,7 @@ class Coolsms {
 		$data['signature'] = $this->getSignature($data['timestamp'], $data['salt']);
 
 		$url = $this->apiUrl . $method . '/' . $version . '/' . $action . '?' . http_build_query($data);
-		$data = file_get_contents($url);
-		return json_decode($data, true);
+		return $this->getCurl($url);
 	}
 
 	/**

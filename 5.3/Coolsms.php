@@ -152,7 +152,7 @@ class Coolsms {
 			[
 				CURLOPT_RETURNTRANSFER  => true
 			]
-		);
+		)['html'];
 	}
 
 	/**
